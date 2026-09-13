@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>TechOne | Tecnologia que funciona.</title>
+<meta name="description" content="Manutenção, montagem, upgrade e suporte para computadores em Recife e região.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="TechOne | Tecnologia que funciona.">
+<meta property="og:description" content="Manutenção, montagem, upgrade e suporte para computadores em Recife e região.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23030503%22/><text x=%2250%22 y=%2268%22 font-size=%2260%22 fill=%22%239CFF00%22 font-family=%22sans-serif%22 text-anchor=%22middle%22>1</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= LOADING SCREEN ================= -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <div class="loader-mark">T<span>1</span></div>
+    <div class="loader-text">INICIALIZANDO SISTEMA<span class="dots"><span>.</span><span>.</span><span>.</span></span></div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+</div>
+
+<!-- ================= 3D BACKGROUND CANVAS ================= -->
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">T<span class="accent">1</span></span>
+      <span class="brand-text">TECHONE<small>Tecnologia que funciona.</small></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#inicio" data-nav>Início</a>
+      <a href="#servicos" data-nav>Serviços</a>
+      <a href="#diferenciais" data-nav>Diferenciais</a>
+      <a href="#projetos" data-nav>Projetos</a>
+      <a href="#precos" data-nav>Preços</a>
+      <a href="#contato" data-nav>Contato</a>
+    </nav>
+
+    <a class="btn btn-primary nav-cta" href="https://wa.me/5581991043219" target="_blank" rel="noopener">
+      Falar no WhatsApp
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<main id="top">
+<section class="hero" id="inicio">
+  <div class="hero-grid">
+    <div class="hero-copy" data-reveal>
+      <p class="eyebrow">Assistência técnica premium — Recife e região</p>
+      <h1 class="hero-title">
+        SEU PC.<br>
+        NOSSO FOCO.<br>
+        <span class="grad">MÁXIMO DESEMPENHO.</span>
+      </h1>
+      <p class="hero-sub">Manutenção, montagem, upgrade e configuração com acabamento profissional para deixar seu computador rápido, estável e pronto para o que você precisa.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://wa.me/5581991043219" target="_blank" rel="noopener">Agendar atendimento</a>
+        <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+      </div>
+      <ul class="hero-stats">
+        <li><strong>+500</strong><span>PCs atendidos</span></li>
+        <li><strong>30 dias</strong><span>de garantia</span></li>
+        <li><strong>100%</strong><span>diagnóstico prévio</span></li>
+      </ul>
+    </div>
+
+    <div class="hero-visual" data-reveal>
+      <div class="pc-holo">
+        <div class="pc-case">
+          <div class="pc-glass">
+            <div class="pc-fan f1"></div>
+            <div class="pc-fan f2"></div>
+            <div class="pc-fan f3"></div>
+            <div class="pc-gpu"><span>GEFORCE RTX</span></div>
+            <div class="pc-ram r1"></div>
+            <div class="pc-ram r2"></div>
+            <div class="pc-ram r3"></div>
+            <div class="pc-board"></div>
+          </div>
+          <div class="pc-glow"></div>
+        </div>
+        <div class="float-tag tag-1"><span class="dot"></span>7× FANS</div>
+        <div class="float-tag tag-2"><span class="dot"></span>RTX READY</div>
+        <div class="float-tag tag-3"><span class="dot"></span>PERFORMANCE MAX</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ================= SERVIÇOS ================= -->
+<section class="section" id="servicos">
+  <div class="container">
+    <p class="eyebrow" data-reveal>O que fazemos</p>
+    <h2 class="section-title" data-reveal>SOLUÇÕES PARA<br>SEU SETUP.</h2>
+
+    <div class="cards-grid">
+
+      <article class="service-card" data-reveal>
+        <div class="card-top"><span class="num">01</span><svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v12H4z" stroke="currentColor" stroke-width="1.5"/><path d="M9 20h6M12 16v4" stroke="currentColor" stroke-width="1.5"/></svg></div>
+        <h3>Formatação &amp; Instalação</h3>
+        <p>Windows, programas, drivers e configuração inicial.</p>
+        <div class="card-bottom"><span class="price">A partir de R$ 100</span><a class="card-link" href="https://wa.me/5581991043219" target="_blank" rel="noopener">Pedir orçamento →</a></div>
+      </article>
+
+      <article class="service-card" data-reveal>
+        <div class="card-top"><span class="num">02</span><svg class="icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M12 4v3M12 17v3M4 12h3M17 12h3" stroke="currentColor" stroke-width="1.5"/></svg></div>
+        <h3>Limpeza Interna</h3>
+        <p>Remoção de poeira, troca de pasta térmica e revisão completa.</p>
+        <div class="card-bottom"><span class="price">A partir de R$ 50</span><a class="card-link" href="https://wa.me/5581991043219" target="_blank" rel="noopener">Pedir orçamento →</a></div>
+      </article>
+
+      <article class="service-card" data-reveal>
+        <div class="card-top"><span class="num">03</span><svg class="icon" viewBox="0 0 24 24" fill="none"><rect x="5" y="3" width="14" height="18" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M9 7h6M9 11h6" stroke="currentColor" stroke-width="1.5"/></svg></div>
+        <h3>Montagem de PC</h3>
+        <p>Montagem completa com organização de cabos e testes de estabilidade.</p>
+        <div class="card-bottom"><span class="price">A partir de R$ 150</span><a class="card-link" href="https://wa.me/5581991043219" target="_blank" rel="noopener">Pedir orçamento →</a></div>
+      </article>
+
+      <article class="service-card" data-reveal>
+        <div class="card-top"><span class="num">04</span><svg class="icon" viewBox="0 0 24 24" fill="none"><rect x="6" y="6" width="12" height="12" stroke="currentColor" stroke-width="1.5"/><path d="M2 9h4M2 15h4M18 9h4M18 15h4M9 2v4M15 2v4M9 18v4M15 18v4" stroke="currentColor" stroke-width="1.5"/></svg></div>
+        <h3>Upgrade de Hardware</h3>
+        <p>Memória RAM, SSD, placa de vídeo e demais componentes.</p>
+        <div class="card-bottom"><span class="price">A partir de R$ 80</span><a class="card-link" href="https://wa.me/5581991043219" target="_blank" rel="noopener">Pedir orçamento →</a></div>
+      </article>
+
+      <article class="service-card" data-reveal>
+        <div class="card-top"><span class="num">05</span><svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M3 8a13 13 0 0 1 18 0M6 12a8 8 0 0 1 12 0M9.5 16a3.5 3.5 0 0 1 5 0" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="19" r="1" fill="currentColor"/></svg></div>
+        <h3>Rede &amp; Wi-Fi</h3>
+        <p>Configuração de redes cabeadas e sem fio, com foco em estabilidade.</p>
+        <div class="card-bottom"><span class="price">A partir de R$ 80</span><a class="card-link" href="https://wa.me/5581991043219" target="_blank" rel="noopener">Pedir orçamento →</a></div>
+      </article>
+
+      <article class="service-card" data-reveal>
+        <div class="card-top"><span class="num">06</span><svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M3 12h4l2-7 4 14 2-7h6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+        <h3>Otimização de Performance</h3>
+        <p>Ajustes de sistema para eliminar lentidão e travamentos.</p>
+        <div class="card-bottom"><span class="price">A partir de R$ 70</span><a class="card-link" href="https://wa.me/5581991043219" target="_blank" rel="noopener">Pedir orçamento →</a></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= DIFERENCIAIS ================= -->
+<section class="section section-alt" id="diferenciais">
+  <div class="container diff-grid">
+    <div data-reveal>
+      <p class="eyebrow">Por que TechOne?</p>
+      <h2 class="section-title">Não é só<br>consertar.</h2>
+      <p class="diff-text">É entender o que seu computador precisa, executar com cuidado e entregar um resultado que você percebe no primeiro uso.</p>
+      <ul class="diff-list">
+        <li><span class="check">✓</span>Diagnóstico antes do serviço</li>
+        <li><span class="check">✓</span>Profissionais qualificados</li>
+        <li><span class="check">✓</span>Garantia no serviço</li>
+        <li><span class="check">✓</span>Atendimento rápido</li>
+        <li><span class="check">✓</span>Serviço organizado</li>
+        <li><span class="check">✓</span>Transparência no orçamento</li>
+      </ul>
+    </div>
+
+    <div class="terminal" data-reveal>
+      <div class="terminal-head">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="terminal-title">TECHONE_DIAGNOSTIC.exe</span>
+      </div>
+      <div class="terminal-body" id="terminalBody">
+        <p class="t-line">&gt; scanning_hardware<span class="t-cursor">_</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJETOS / GALERIA ================= -->
+<section class="section" id="projetos">
+  <div class="container">
+    <p class="eyebrow" data-reveal>Um pouco do</p>
+    <h2 class="section-title" data-reveal>NOSSO TRABALHO.</h2>
+
+    <div class="gallery-filters" data-reveal>
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="manutencao">Manutenção</button>
+      <button class="filter-btn" data-filter="servicos">Serviços</button>
+      <button class="filter-btn" data-filter="builds">Builds</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid" data-reveal>
+      <figure class="gallery-item span-2" data-cat="servicos">
+        <img src="assets/build-03.jpg" alt="Setup completo entregue ao cliente com iluminação azul e periféricos" loading="lazy" width="1280" height="2283">
+        <figcaption>
+          <span class="tag">Serviços</span>
+          <p>Setup completo montado e entregue ao cliente</p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item" data-cat="builds">
+        <img src="assets/build-01.jpg" alt="Build custom com water cooler RGB e placa de vídeo GeForce RTX" loading="lazy" width="1280" height="1699">
+        <figcaption>
+          <span class="tag">Builds</span>
+          <p>Build custom com water cooler e RGB sincronizado</p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item" data-cat="builds">
+        <img src="assets/build-02.jpg" alt="Gabinete gamer com fans RGB em tons laranja e vermelho" loading="lazy" width="1280" height="1706">
+        <figcaption>
+          <span class="tag">Builds</span>
+          <p>Gabinete com iluminação RGB personalizada</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<!-- ================= PREÇOS ================= -->
+<section class="section section-alt" id="precos">
+  <div class="container">
+    <p class="eyebrow" data-reveal>Orçamento rápido</p>
+    <h2 class="section-title" data-reveal>NÍVEIS DE<br>ATENDIMENTO.</h2>
+
+    <div class="pricing-grid">
+      <div class="pricing-card" data-reveal>
+        <div class="pricing-head">
+          <span class="pricing-level">Nível 01</span>
+          <h3>Básico</h3>
+          <p>Serviços essenciais para o dia a dia</p>
+        </div>
+        <ul class="pricing-list">
+          <li>Configuração de periféricos <em>R$ 30</em></li>
+          <li>Instalação de programas <em>R$ 40</em></li>
+          <li>Diagnóstico <em>R$ 50</em></li>
+          <li>Instalação de RAM <em>R$ 40</em></li>
+          <li>Instalação de SSD <em>R$ 60</em></li>
+        </ul>
+        <a class="btn btn-ghost btn-block" href="https://wa.me/5581991043219" target="_blank" rel="noopener">Solicitar</a>
+      </div>
+
+      <div class="pricing-card featured" data-reveal>
+        <div class="featured-badge">Mais procurado</div>
+        <div class="pricing-head">
+          <span class="pricing-level">Nível 02</span>
+          <h3>Intermediário</h3>
+          <p>Manutenção avançada</p>
+        </div>
+        <ul class="pricing-list">
+          <li>Limpeza interna <em>R$ 80</em></li>
+          <li>Troca de pasta térmica <em>R$ 100</em></li>
+          <li>Formatação + backup <em>R$ 150</em></li>
+          <li>Remoção de vírus/malware <em>R$ 100</em></li>
+          <li>Upgrade de hardware <em>a partir de R$ 80</em></li>
+        </ul>
+        <a class="btn btn-primary btn-block" href="https://wa.me/5581991043219" target="_blank" rel="noopener">Solicitar</a>
+      </div>
+
+      <div class="pricing-card" data-reveal>
+        <div class="pricing-head">
+          <span class="pricing-level">Nível 03</span>
+          <h3>Premium</h3>
+          <p>Serviço completo</p>
+        </div>
+        <ul class="pricing-list">
+          <li>Montagem de PC <em>R$ 150</em></li>
+          <li>Montagem + configuração <em>R$ 250</em></li>
+          <li>Manutenção completa <em>R$ 180</em></li>
+          <li>Otimização completa <em>R$ 150</em></li>
+          <li>Configuração para jogos <em>R$ 200</em></li>
+        </ul>
+        <a class="btn btn-ghost btn-block" href="https://wa.me/5581991043219" target="_blank" rel="noopener">Solicitar</a>
+      </div>
+    </div>
+
+    <p class="pricing-note" data-reveal>* Peças e componentes não estão inclusos. O valor do serviço é referente apenas à mão de obra. Garantia de 30 dias para serviços realizados.</p>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-section">
+  <div class="container cta-inner" data-reveal>
+    <h2>PRONTO PARA DAR<br>UM UPGRADE NO SEU SETUP?</h2>
+    <p>Atendimento em Recife e região.</p>
+    <a class="btn btn-primary btn-lg" href="https://wa.me/5581991043219" target="_blank" rel="noopener">Chamar no WhatsApp ↗</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= CONTATO / FOOTER ================= -->
+<footer class="footer" id="contato">
+  <div class="container footer-grid">
+    <div class="footer-brand" data-reveal>
+      <span class="brand-mark">T<span class="accent">1</span></span>
+      <span class="brand-text">TECHONE<small>Tecnologia que funciona.</small></span>
+      <p>Manutenção, montagem e suporte técnico com acabamento profissional.</p>
+    </div>
+
+    <div class="footer-col" data-reveal>
+      <h4>Contato</h4>
+      <a href="https://wa.me/5581991043219" target="_blank" rel="noopener">WhatsApp — 81 99104-3219</a>
+      <a href="https://instagram.com/techone.oficial" target="_blank" rel="noopener">Instagram — @techone.oficial</a>
+      <span>Recife e região</span>
+    </div>
+
+    <div class="footer-col" data-reveal>
+      <h4>Navegação</h4>
+      <a href="#servicos">Serviços</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#precos">Preços</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> TechOne. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/5581991043219" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.02c-.24.68-1.4 1.3-1.94 1.38-.5.08-1.13.11-1.83-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.26-.29.58-.36.77-.36h.55c.18 0 .42-.07.65.5.24.58.82 2 .9 2.14.07.15.12.32.02.51-.09.2-.14.32-.28.49-.14.17-.29.38-.42.51-.14.14-.28.29-.12.57.16.28.72 1.19 1.55 1.93 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.16-.19.68-.8.87-1.07.18-.28.36-.23.6-.14.24.09 1.55.73 1.82.87.27.14.45.2.51.32.07.12.07.68-.17 1.36z"/></svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
