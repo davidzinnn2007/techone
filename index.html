@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechOne | Soluções em Tecnologia</title>
+<meta name="description" content="TechOne — soluções em tecnologia, desenvolvimento web, computadores e suporte mobile.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="TechOne | Tecnologia que Funciona">
+<meta property="og:description" content="TechOne — soluções em tecnologia, desenvolvimento web, computadores e suporte mobile.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/logo/techone-logo-full.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="128x128" href="assets/icons/favicon.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+  <div class="header__inner container">
+    <a href="#inicio" class="brand" aria-label="TechOne - início">
+      <img class="brand__mark" src="assets/logo/techone-icon.png" alt="" width="36" height="36">
+      <span class="brand__text">TECH<span class="brand__accent">ONE</span></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navegação principal">
+      <ul class="nav__list">
+        <li><a href="#inicio" class="nav__link" data-nav>INÍCIO</a></li>
+        <li><a href="#sobre" class="nav__link" data-nav>SOBRE</a></li>
+        <li><a href="#servicos" class="nav__link" data-nav>SERVIÇOS</a></li>
+        <li><a href="#techone-pc" class="nav__link" data-nav>TECHONE PC</a></li>
+        <li><a href="#techone-cell" class="nav__link" data-nav>TECHONE CELL</a></li>
+        <li><a href="#techone-dev" class="nav__link" data-nav>TECHONE DEV</a></li>
+        <li><a href="#contato" class="nav__link" data-nav>CONTATO</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contato" class="btn btn--primary btn--sm header__cta">FALE CONOSCO</a>
+
+    <button type="button" class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= MOBILE MENU ================= -->
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <ul class="mobile-menu__list">
+    <li><a href="#inicio" data-nav-mobile>Início</a></li>
+    <li><a href="#sobre" data-nav-mobile>Sobre</a></li>
+    <li><a href="#servicos" data-nav-mobile>Serviços</a></li>
+    <li><a href="#techone-pc" data-nav-mobile>TechOne PC</a></li>
+    <li><a href="#techone-cell" data-nav-mobile>TechOne Cell</a></li>
+    <li><a href="#techone-dev" data-nav-mobile>TechOne Dev</a></li>
+    <li><a href="#contato" data-nav-mobile>Contato</a></li>
+  </ul>
+  <a href="#contato" class="btn btn--primary mobile-menu__cta" data-nav-mobile>FALE CONOSCO</a>
+</div>
+
+<main id="main-content">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="inicio">
+    <div class="hero__canvas-wrap" aria-hidden="true">
+      <canvas id="hero-canvas"></canvas>
+    </div>
+    <div class="hero__inner container">
+      <div class="hero__content">
+        <p class="hero__kicker">TECHONE PC · TECHONE CELL · TECHONE DEV</p>
+        <h1 class="hero__title">Tecnologia que<br>funciona.</h1>
+        <p class="hero__text">Soluções inteligentes em tecnologia para pessoas, empresas e projetos.</p>
+        <p class="hero__subtext">Da montagem do seu computador ao desenvolvimento da sua próxima solução digital.</p>
+        <div class="hero__actions">
+          <a href="#servicos" class="btn btn--primary">CONHEÇA NOSSAS SOLUÇÕES</a>
+          <a href="#contato" class="btn btn--ghost">FALAR COM A TECHONE</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ================= SOBRE ================= -->
+  <section class="about" id="sobre">
+    <div class="container about__grid">
+      <div class="about__text reveal">
+        <p class="section-label">Sobre a TechOne</p>
+        <h2 class="section-title">Tecnologia com propósito.</h2>
+        <p class="about__desc">A TechOne nasceu com o objetivo de oferecer tecnologia de forma acessível, eficiente e profissional. Reunimos hardware, soluções mobile e desenvolvimento para transformar necessidades em soluções que realmente funcionam.</p>
+      </div>
+      <div class="about__indicators">
+        <div class="indicator reveal">
+          <span class="indicator__num">01</span>
+          <span class="indicator__label">PC</span>
+        </div>
+        <div class="indicator reveal">
+          <span class="indicator__num">02</span>
+          <span class="indicator__label">CELL</span>
+        </div>
+        <div class="indicator reveal">
+          <span class="indicator__num">03</span>
+          <span class="indicator__label">DEV</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVIÇOS ================= -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label">Nossas soluções</p>
+        <h2 class="section-title">Três áreas. Uma única missão: fazer a tecnologia funcionar para você.</h2>
+      </div>
+
+      <div class="services__grid">
+        <article class="service-card reveal" id="card-pc">
+          <div class="service-card__top">
+            <span class="service-card__cat">Hardware &amp; Manutenção</span>
+            <h3 class="service-card__title">TechOne PC</h3>
+            <p class="service-card__desc">Montagem, manutenção, upgrades, formatação, configuração e otimização de computadores.</p>
+          </div>
+          <ul class="service-card__list">
+            <li>Montagem de PC</li>
+            <li>Manutenção</li>
+            <li>Limpeza</li>
+            <li>Upgrade</li>
+            <li>Formatação</li>
+            <li>Configuração</li>
+            <li>Diagnóstico</li>
+            <li>Otimização</li>
+          </ul>
+          <div class="service-card__bottom">
+            <span class="service-card__price">Serviços a partir de R$ 40</span>
+            <a href="#precos-pc" class="btn btn--outline btn--sm">VER SERVIÇOS E PREÇOS</a>
+          </div>
+        </article>
+
+        <article class="service-card reveal" id="card-cell">
+          <div class="service-card__top">
+            <span class="service-card__cat">Mobile &amp; Suporte</span>
+            <h3 class="service-card__title">TechOne Cell</h3>
+            <p class="service-card__desc">Soluções e suporte para dispositivos móveis, configuração, backup, transferência de dados e otimização.</p>
+          </div>
+          <ul class="service-card__list">
+            <li>Configuração</li>
+            <li>Backup</li>
+            <li>Transferência de dados</li>
+            <li>Otimização</li>
+            <li>Suporte</li>
+          </ul>
+          <div class="service-card__bottom">
+            <a href="#techone-cell" class="btn btn--outline btn--sm">CONHECER TECHONE CELL</a>
+          </div>
+        </article>
+
+        <article class="service-card reveal" id="card-dev">
+          <div class="service-card__top">
+            <span class="service-card__cat">Web &amp; Software</span>
+            <h3 class="service-card__title">TechOne Dev</h3>
+            <p class="service-card__desc">Desenvolvimento de sites, landing pages, sistemas web e soluções digitais personalizadas.</p>
+          </div>
+          <ul class="service-card__list">
+            <li>Landing pages</li>
+            <li>Sites institucionais</li>
+            <li>Sites profissionais</li>
+            <li>Sistemas web</li>
+            <li>Automação</li>
+            <li>Manutenção</li>
+            <li>Soluções personalizadas</li>
+          </ul>
+          <div class="service-card__bottom">
+            <a href="#techone-dev" class="btn btn--outline btn--sm">CONHECER TECHONE DEV</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PREÇOS TECHONE PC ================= -->
+  <section class="pricing" id="techone-pc">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label">TechOne PC</p>
+        <h2 class="section-title">Serviços de manutenção, configuração e montagem.</h2>
+      </div>
+
+      <div class="pricing__grid" id="precos-pc">
+        <div class="price-tier reveal">
+          <div class="price-tier__head">
+            <h3>Básico</h3>
+            <p>Serviços essenciais para o dia a dia.</p>
+          </div>
+          <ul class="price-tier__list">
+            <li><span>Formatação + Windows</span><strong>R$ 100</strong></li>
+            <li><span>Instalação de programas</span><strong>R$ 40</strong></li>
+            <li><span>Instalação/configuração de drivers</span><strong>R$ 40</strong></li>
+            <li><span>Otimização de PC lento</span><strong>R$ 70</strong></li>
+            <li><span>Instalação de RAM</span><strong>R$ 40</strong></li>
+            <li><span>Instalação de SSD</span><strong>R$ 60</strong></li>
+            <li><span>Diagnóstico</span><strong>R$ 50</strong></li>
+          </ul>
+          <button type="button" class="btn btn--outline btn--sm btn--block" data-whatsapp-service="TechOne PC - Nível Básico">SOLICITAR ORÇAMENTO</button>
+        </div>
+
+        <div class="price-tier price-tier--featured reveal">
+          <span class="price-tier__badge">MAIS PROCURADO</span>
+          <div class="price-tier__head">
+            <h3>Intermediário</h3>
+            <p>Manutenção e serviços avançados.</p>
+          </div>
+          <ul class="price-tier__list">
+            <li><span>Limpeza interna</span><strong>R$ 80</strong></li>
+            <li><span>Limpeza + pasta térmica</span><strong>R$ 100</strong></li>
+            <li><span>Formatação + backup</span><strong>R$ 150</strong></li>
+            <li><span>Remoção de vírus/malware</span><strong>R$ 100</strong></li>
+            <li><span>Backup/migração de dados</span><strong>R$ 100</strong></li>
+            <li><span>Configuração de rede/Wi-Fi</span><strong>R$ 80</strong></li>
+            <li><span>Diagnóstico + reparo</span><strong>A partir de R$ 100</strong></li>
+            <li><span>Upgrade de hardware</span><strong>A partir de R$ 80</strong></li>
+          </ul>
+          <button type="button" class="btn btn--primary btn--sm btn--block" data-whatsapp-service="TechOne PC - Nível Intermediário">SOLICITAR ORÇAMENTO</button>
+        </div>
+
+        <div class="price-tier reveal">
+          <div class="price-tier__head">
+            <h3>Premium</h3>
+            <p>Serviços completos e especializados.</p>
+          </div>
+          <ul class="price-tier__list">
+            <li><span>Montagem de PC</span><strong>R$ 150</strong></li>
+            <li><span>Montagem + configuração</span><strong>R$ 250</strong></li>
+            <li><span>Montagem + Windows</span><strong>R$ 280</strong></li>
+            <li><span>Manutenção completa</span><strong>R$ 180</strong></li>
+            <li><span>Otimização completa</span><strong>R$ 150</strong></li>
+            <li><span>Configuração completa para jogos</span><strong>R$ 200</strong></li>
+            <li><span>Drivers e periféricos</span><strong>R$ 150</strong></li>
+          </ul>
+          <button type="button" class="btn btn--outline btn--sm btn--block" data-whatsapp-service="TechOne PC - Nível Premium">SOLICITAR ORÇAMENTO</button>
+        </div>
+      </div>
+
+      <!-- LIMPEZA DE PC -->
+      <div class="cleaning">
+        <div class="section-head section-head--sm reveal">
+          <h3 class="section-subtitle">Limpeza de PC — 3 níveis</h3>
+        </div>
+        <div class="cleaning__grid">
+          <div class="cleaning-card reveal">
+            <h4>Básica</h4>
+            <span class="cleaning-card__price">R$ 50</span>
+            <ul>
+              <li>Remoção de poeira externa</li>
+              <li>Limpeza superficial</li>
+              <li>Teste de funcionamento</li>
+            </ul>
+          </div>
+          <div class="cleaning-card reveal">
+            <h4>Intermediária</h4>
+            <span class="cleaning-card__price">R$ 80</span>
+            <ul>
+              <li>Limpeza completa interna</li>
+              <li>Remoção de poeira e sujeira</li>
+              <li>Teste de funcionamento</li>
+            </ul>
+          </div>
+          <div class="cleaning-card reveal">
+            <h4>Premium</h4>
+            <span class="cleaning-card__price">R$ 120</span>
+            <ul>
+              <li>Limpeza profunda</li>
+              <li>Troca de pasta térmica</li>
+              <li>Revisão completa</li>
+              <li>Teste de funcionamento</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- INFORMAÇÕES COMERCIAIS -->
+      <div class="info-strip reveal">
+        <div class="info-strip__item">
+          <h5>Peças e componentes</h5>
+          <p>Não estão inclusos nos valores dos serviços.</p>
+        </div>
+        <div class="info-strip__item">
+          <h5>Diagnóstico</h5>
+          <p>Valor do diagnóstico: R$ 50. Caso o cliente aprove o reparo, o valor poderá ser abatido da mão de obra.</p>
+        </div>
+        <div class="info-strip__item">
+          <h5>Garantia</h5>
+          <p>Serviços realizados possuem garantia de 30 dias, exceto instalações de softwares de terceiros.</p>
+        </div>
+        <div class="info-strip__item">
+          <h5>Orçamento</h5>
+          <p>Valores podem variar conforme a complexidade do serviço.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TECHONE CELL ================= -->
+  <section class="split-section" id="techone-cell">
+    <div class="container split-section__inner">
+      <div class="split-section__text reveal">
+        <p class="section-label">Mobile &amp; Suporte</p>
+        <h2 class="section-title">TechOne Cell</h2>
+        <p class="split-section__desc">Soluções e suporte para dispositivos móveis: configuração, backup, transferência de dados e otimização — para o seu celular funcionar como deveria.</p>
+        <ul class="tag-list">
+          <li>Configuração</li>
+          <li>Backup</li>
+          <li>Transferência de dados</li>
+          <li>Otimização</li>
+          <li>Suporte</li>
+        </ul>
+        <button type="button" class="btn btn--primary" data-whatsapp-service="TechOne Cell">FALAR SOBRE MEU CELULAR</button>
+      </div>
+      <div class="split-section__visual" aria-hidden="true">
+        <div class="visual-frame visual-frame--cell">
+          <svg viewBox="0 0 200 260" width="100%" height="100%">
+            <rect x="30" y="10" width="140" height="240" rx="20" fill="none" stroke="#488C03" stroke-width="2"/>
+            <rect x="46" y="30" width="108" height="180" rx="4" fill="#102601" stroke="#1B4001"/>
+            <circle cx="100" cy="228" r="10" fill="none" stroke="#488C03" stroke-width="1.5"/>
+            <path d="M60 60H140M60 90H120M60 120H140M60 150H100" stroke="#488C03" stroke-width="1.4" stroke-linecap="round" opacity="0.7"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TECHONE DEV ================= -->
+  <section class="split-section split-section--reverse" id="techone-dev">
+    <div class="container split-section__inner">
+      <div class="split-section__visual" aria-hidden="true">
+        <div class="visual-frame visual-frame--dev">
+          <svg viewBox="0 0 260 200" width="100%" height="100%">
+            <rect x="10" y="10" width="240" height="180" rx="10" fill="#102601" stroke="#488C03" stroke-width="2"/>
+            <circle cx="28" cy="28" r="3" fill="#488C03"/>
+            <circle cx="40" cy="28" r="3" fill="#1B4001"/>
+            <circle cx="52" cy="28" r="3" fill="#1B4001"/>
+            <path d="M30 60L50 80L30 100" stroke="#488C03" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M70 100H110" stroke="#488C03" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M30 130H220" stroke="#1B4001" stroke-width="1.4"/>
+            <path d="M30 150H180" stroke="#1B4001" stroke-width="1.4"/>
+            <path d="M30 170H200" stroke="#1B4001" stroke-width="1.4"/>
+          </svg>
+        </div>
+      </div>
+      <div class="split-section__text reveal">
+        <p class="section-label">Web &amp; Software</p>
+        <h2 class="section-title">TechOne Dev</h2>
+        <p class="split-section__desc">Desenvolvimento de sites, landing pages, sistemas web e soluções digitais personalizadas, pensadas para o seu objetivo.</p>
+        <ul class="tag-list">
+          <li>Landing pages</li>
+          <li>Sites institucionais</li>
+          <li>Sites profissionais</li>
+          <li>Sistemas web</li>
+          <li>Automação</li>
+          <li>Manutenção</li>
+          <li>Soluções personalizadas</li>
+        </ul>
+        <button type="button" class="btn btn--primary" data-whatsapp-service="TechOne Dev">FALAR SOBRE MEU PROJETO</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= POR QUE TECHONE ================= -->
+  <section class="why">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label">Diferenciais</p>
+        <h2 class="section-title">Por que escolher a TechOne?</h2>
+      </div>
+      <div class="why__grid">
+        <div class="why-card reveal">
+          <svg class="why-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21C12 21 4 15.5 4 9.5C4 6.5 6.5 4.5 9 4.5C10.5 4.5 11.5 5.2 12 6C12.5 5.2 13.5 4.5 15 4.5C17.5 4.5 20 6.5 20 9.5C20 15.5 12 21 12 21Z" stroke="#488C03" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <h3>Atendimento próximo</h3>
+          <p>Entendemos sua necessidade antes de apresentar uma solução.</p>
+        </div>
+        <div class="why-card reveal">
+          <svg class="why-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8" stroke="#488C03" stroke-width="1.6"/><circle cx="12" cy="12" r="3" stroke="#488C03" stroke-width="1.6"/></svg>
+          <h3>Soluções personalizadas</h3>
+          <p>Cada serviço é pensado de acordo com o problema e objetivo do cliente.</p>
+        </div>
+        <div class="why-card reveal">
+          <svg class="why-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12L10 18L20 6" stroke="#488C03" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Qualidade</h3>
+          <p>Buscamos entregar serviços organizados, funcionais e bem executados.</p>
+        </div>
+        <div class="why-card reveal">
+          <svg class="why-card__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3L20 7V12C20 16.5 16.5 20.2 12 21C7.5 20.2 4 16.5 4 12V7L12 3Z" stroke="#488C03" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <h3>Compromisso</h3>
+          <p>Transparência e responsabilidade em cada etapa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROCESSO ================= -->
+  <section class="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-label">Processo</p>
+        <h2 class="section-title">Como funciona</h2>
+      </div>
+      <ol class="process__steps">
+        <li class="process-step reveal">
+          <span class="process-step__num">01</span>
+          <h3>Conversa</h3>
+          <p>Entendemos sua necessidade.</p>
+        </li>
+        <li class="process-step reveal">
+          <span class="process-step__num">02</span>
+          <h3>Análise</h3>
+          <p>Identificamos o melhor caminho.</p>
+        </li>
+        <li class="process-step reveal">
+          <span class="process-step__num">03</span>
+          <h3>Solução</h3>
+          <p>Executamos o serviço ou projeto.</p>
+        </li>
+        <li class="process-step reveal">
+          <span class="process-step__num">04</span>
+          <h3>Entrega</h3>
+          <p>Você recebe tudo funcionando.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="cta">
+    <div class="container cta__inner reveal">
+      <h2 class="cta__title">Precisa de uma solução?</h2>
+      <p class="cta__text">Vamos transformar sua necessidade em tecnologia.</p>
+      <a href="#contato" class="btn btn--primary btn--lg">FALAR COM A TECHONE</a>
+    </div>
+  </section>
+
+  <!-- ================= CONTATO ================= -->
+  <section class="contact" id="contato">
+    <div class="container contact__grid">
+      <div class="contact__intro reveal">
+        <p class="section-label">Contato</p>
+        <h2 class="section-title">Fale com a TechOne</h2>
+        <p class="contact__desc">Conte o que você precisa e retornamos o mais breve possível.</p>
+        <div class="contact__meta" id="contact-meta">
+          <p><strong>Local:</strong> <span id="meta-location">Recife - PE</span></p>
+          <p><strong>WhatsApp:</strong> <a href="#" id="meta-whatsapp-1" target="_blank" rel="noopener"></a></p>
+          <p><strong>WhatsApp:</strong> <a href="#" id="meta-whatsapp-2" target="_blank" rel="noopener"></a></p>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contact-form" novalidate>
+        <div class="form-row">
+          <label for="field-name">Nome</label>
+          <input type="text" id="field-name" name="name" autocomplete="name" required>
+          <span class="form-error" data-error-for="field-name"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="field-email">Email</label>
+          <input type="email" id="field-email" name="email" autocomplete="email" required>
+          <span class="form-error" data-error-for="field-email"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="field-phone">Telefone</label>
+          <input type="tel" id="field-phone" name="phone" autocomplete="tel" required>
+          <span class="form-error" data-error-for="field-phone"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="field-service">Serviço</label>
+          <select id="field-service" name="service" required>
+            <option value="" disabled selected>Selecione um serviço</option>
+            <option value="TechOne PC">TechOne PC</option>
+            <option value="TechOne Cell">TechOne Cell</option>
+            <option value="TechOne Dev">TechOne Dev</option>
+            <option value="Outro">Outro</option>
+          </select>
+          <span class="form-error" data-error-for="field-service"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="field-message">Mensagem</label>
+          <textarea id="field-message" name="message" rows="4" required></textarea>
+          <span class="form-error" data-error-for="field-message"></span>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--block">ENVIAR MENSAGEM</button>
+        <p class="contact-form__status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <div class="brand">
+        <img class="brand__mark" src="assets/logo/techone-icon.png" alt="TechOne" width="40" height="40">
+        <span class="brand__text">TECH<span class="brand__accent">ONE</span></span>
+      </div>
+      <p class="footer__slogan">Tecnologia que funciona.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Soluções</h4>
+      <ul>
+        <li><a href="#techone-pc">TechOne PC</a></li>
+        <li><a href="#techone-cell">TechOne Cell</a></li>
+        <li><a href="#techone-dev">TechOne Dev</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="#" id="footer-whatsapp" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="#" id="footer-whatsapp-2" target="_blank" rel="noopener">WhatsApp (2ª linha)</a></li>
+        <li><a href="#" id="footer-instagram" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#" id="footer-email">Email</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom container">
+    <p>&copy; 2026 TechOne. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<a href="#" class="whatsapp-fab" id="whatsapp-fab" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.34c1.37.72 2.93 1.13 4.6 1.13h.02c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.09h-.01c-1.5 0-2.97-.4-4.25-1.15l-.3-.18-3.16.78.84-3.09-.2-.32a8.08 8.08 0 0 1-1.24-4.32c0-4.47 3.64-8.11 8.13-8.11 2.17 0 4.2.85 5.74 2.38a8.05 8.05 0 0 1 2.38 5.73c0 4.48-3.64 8.28-7.93 8.28zm4.46-6.07c-.24-.12-1.44-.71-1.67-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.53.06-.24-.12-1.02-.38-1.95-1.2-.72-.64-1.2-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.8-.2-.48-.4-.42-.55-.42-.14-.01-.3-.01-.46-.01a.9.9 0 0 0-.65.3c-.22.24-.85.83-.85 2.03 0 1.2.87 2.35 1 2.51.12.16 1.71 2.6 4.14 3.65.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/></svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script src="js/script.js" defer></script>
+</body>
+</html>
